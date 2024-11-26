@@ -37,12 +37,14 @@ hold.addEventListener('click', () => {
     if (score[0].textContent >= 100) {
         p0.classList.add('player--winner');
         btnRoll.classList.add('hide');
+        hold.classList.add('hide');
         current[0].textContent = 'WINNER';
         // alert("Restart the game");
     }
     else if (score[1].textContent >= 100) {
         p1.classList.add('player--winner');
         btnRoll.classList.add('hide');
+        hold.classList.add('hide');
         current[1].textContent = 'WINNER';
     }
 })
